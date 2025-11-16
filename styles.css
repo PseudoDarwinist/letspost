@@ -1,0 +1,270 @@
+/* Import Pixelated Font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', 'Droid Sans Mono', 'Source Code Pro', monospace;
+    line-height: 1.6;
+    color: #e6b800;
+    background: url('images/site-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Header */
+header {
+    border-bottom: 1px solid #1a2a1e;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 2px;
+}
+
+header h1 a {
+    color: #e6b800;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header h1 a:hover {
+    color: #ffd700;
+    text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.6);
+}
+
+nav a {
+    color: #b8950f;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #e6b800;
+}
+
+/* About Section */
+.about {
+    margin-bottom: 60px;
+    font-size: 16px;
+    color: #b8950f;
+}
+
+/* Posts */
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.post-preview {
+    border-bottom: 1px solid #1a2a1e;
+    padding-bottom: 30px;
+}
+
+.post-preview:last-child {
+    border-bottom: none;
+}
+
+.post-preview time {
+    display: block;
+    font-size: 14px;
+    color: #9b7d0a;
+    margin-bottom: 8px;
+}
+
+.post-preview h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.6;
+}
+
+.post-preview h2 a {
+    color: #e6b800;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.post-preview h2 a:hover {
+    color: #ffd700;
+}
+
+.post-preview .excerpt {
+    color: #b8950f;
+    font-size: 15px;
+}
+
+/* Footer */
+footer {
+    margin-top: 80px;
+    padding-top: 20px;
+    border-top: 1px solid #3a3520;
+    text-align: center;
+    font-size: 14px;
+    color: #9b7d0a;
+}
+
+/* Post Page Styles */
+.post-page {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.post-content {
+    background: transparent;
+    backdrop-filter: none;
+    padding: 80px 100px;
+    border-radius: 0;
+    margin: 60px auto;
+    max-width: 1200px;
+    box-shadow: none;
+    border: none;
+}
+
+.post-header {
+    margin-bottom: 40px;
+}
+
+.post-header .back-link {
+    display: inline-block;
+    color: #b8950f;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.post-header .back-link:hover {
+    color: #e6b800;
+}
+
+.post-header time {
+    display: block;
+    font-size: 14px;
+    color: #9b7d0a;
+    margin-bottom: 10px;
+}
+
+.post-header h1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #e6b800;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.post-body h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 30px 0 15px;
+    color: #e6b800;
+}
+
+.post-body h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 25px 0 12px;
+    color: #d4a806;
+}
+
+.post-body p {
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #b8950f;
+}
+
+.post-body ul, .post-body ol {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.post-body li {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+.post-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-body code {
+    background: #2a2410;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', monospace;
+    font-size: 14px;
+    color: #ffd700;
+}
+
+.post-body pre {
+    background: #1a1608;
+    color: #e6b800;
+    padding: 20px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 25px 0;
+    border-left: 3px solid #b8950f;
+}
+
+.post-body pre code {
+    background: none;
+    padding: 0;
+    color: #e6b800;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .post-content {
+        padding: 40px 20px;
+        margin: 20px 10px;
+    }
+
+    .post-header h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .post-content {
+        padding: 60px 50px;
+    }
+}
